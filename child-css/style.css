@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+ul {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* child selector */
+
+li:first-child {
+  /* lấy phần tử đầu tiên */
+}
+
+li:nth-child(2) {
+  /* lấy phần tử thứ 2, chạy từ trên xuống dưới 1 2 3 4 5 */
+}
+
+li:nth-last-child(2) {
+  /* ngược lại nth-child, chạy từ 5 4 3 2 1 */
+}
+
+li:last-child {
+  /* lấy phần tử cuối cùng */
+}
+
+li:not(:first-child) {
+  /* lấy tất cả phần tử trừ thằng đầu tiên */
+}
+
+li:not(:last-child) {
+  /* lấy tất cả phần tử trừ thằng cuối cùng */
+}
+
+li:nth-child(odd) {
+  /* tất cả phần tử là số lẻ */
+}
+
+li:nth-child(even) {
+  /* tất cả phần tử là số chẵn */
+}
+
+li:nth-child(2n+1) {
+  /* n chay tu 0, kq lấy 1 3 5 ...vv */
+}
+
+li:nth-child(2n+3) {
+  /* n chay tu 0, 3 5 ...vv */
+}

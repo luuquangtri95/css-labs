@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  background-color: red;
+  color: white;
+  padding: 25px;
+  /* width: 100% =>> 100% + 250px = ?? */
+  /* khi có margin left thì width 100% chiếm toàn bộ thẻ cha là body và + thêm 250px từ margin left sẽ xuất hiện scroll ngang */
+  /* =>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* width auto =>> 100% - 250px = ?? không xuấT hiện scroll ngang */
+  /* vì nó y chang như box sizing border box =>> tự tính toán làm sao để vừa với màn hình và không xuất hiện scroll */
+  width: auto;
+  margin-left: 25rem;
+}

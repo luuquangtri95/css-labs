@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiểu rõ thẻ inline và block</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <span>demo inline</span>
+    <span>demo inline</span>
+    <span>demo inline</span>
+    <!-- thẻ inline là thẻ có độ rộng bằng nội dung mà nó chưa =>> f12 tab computed sẽ hiện auto x auto -->
+    <!-- thẻ inline sẽ bị hạn chế về CSS -->
+    <!-- nếu có nhìu thẻ inline nằm vớI nhau, sẽ nằm cùng 1 hàng -->
+
+    <p>demo block</p>
+    <p>demo block</p>
+    <div class="container">
+      <p>aaa</p>
+    </div>
+    <!-- thẻ block có độ rộng full phần tử chứa nó, y như width 100%-->
+    <!-- nếu có nhiều thẻ block thì sẽ xuống hàng -->
+    <!-- best của thẻ block là margin 0 auto, margin-left auto... dành cho 1 khối nào đÓ ||  cách 2 là dùng 1 div bao và dùng text-align center -->
+
+    <div class="container">
+      <div class="box"></div>
+
+    <!-- làm sao cho thẻ inline ra giữa =>> trick dùng text-align center cho div cha -->
+    </div>
+  </body>
+</html>

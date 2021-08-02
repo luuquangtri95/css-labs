@@ -1,0 +1,11 @@
+/* type css: check theo kiểu */
+
+li:first-child {
+  /* lấy phần tử đầu tiên, như khi có những thẻ khác chèn vào thì vị trị sẽ bị sai, nên k dùng được first-child */
+  color: red;
+}
+
+li:first-of-type {
+  /* lấy trực tiếp thẻ cần lấy, dù cho phía trên có bao nhiêu thẻ khác chèn vào đi nữa */
+  color: red;
+}

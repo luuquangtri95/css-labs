@@ -1,0 +1,58 @@
+h2 {
+  color: red;
+  font-size: 50px;
+}
+
+.title {
+  color: blue;
+  font-size: 40px;
+}
+
+.title+.demo {
+  /* selector năm liền kề, cùng cấp thì mới sử dụng đc */
+  color: red;
+}
+
+.title~.demo2 {
+  /* selector không cần liền kề, cùng cấp là sử dụng được */
+  color: green;
+}
+
+.list>li {
+  /* trỏ đến tất cả thẻ li là con ul */
+  color: blueviolet;
+}
+
+/* ^= : bắt đầu */
+
+/* $= : kết thúc */
+
+/* *= : có chứa */
+
+div[style^="cursor: pointer"] {
+  color: chartreuse;
+  background: #000;
+}
+
+div[style$="pointer"] {
+  color: chartreuse;
+  background: #000;
+}
+
+div[style*=":"] {
+  color: chartreuse;
+  background: #000;
+}
+
+input[type="text"] {
+  color: red;
+  width: 100%;
+}
+
+input[type="email"] {}
+
+input[type="password"] {}
+
+div[data-title] {
+  color: darkmagenta;
+}

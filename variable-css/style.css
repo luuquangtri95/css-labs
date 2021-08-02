@@ -1,0 +1,14 @@
+:root {
+  --primary-color: red;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  /* local variable */
+  --primary-color: blue;
+  /* color: var(--primary-color) =>>> tra ve mau blue vi local variable uu tien hon */
+  color: var(--primary-color); 
+}

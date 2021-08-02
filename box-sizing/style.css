@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+/* box */
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  border: 5px solid black;
+  padding: 10px;
+  /* kết quả sẽ box sẽ là 130px vì mặc định trình duyệt là content box */
+  /* width = width + border left + border right + padding left + padding right = 100 + 5 + 5 + 10 + 10 = 130px */
+  /* height = height + border top + border bottom + padding bottom + padding top = 100 + 5 + 5 + 10 + 10 = 130px */
+  /* để hạn chế việc này sử dụng thuộc tính border-box =>> nó sẽ tính toán ntn đó để div box sẽ đủ 100px */
+  box-sizing: border-box;
+  /* =>> lúc này =>> width = width - border left - border right - padding left - padding right = 100 - 5 - 5 - 10 - 10 = 70px */
+  /* =>> lúc này =>> height = height - border top - border bottom - padding bottom - padding top = 100 - 5 - 5 - 10 - 10 = 70px */
+  /* =>> div box lúc này sẽ đủ 100px và sẽ đúng với thiêt kế */
+}

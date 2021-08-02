@@ -1,0 +1,14 @@
+.box {
+  width: 200px;
+  height: 200px;
+  /* direction: hướng */
+  /* trái quá phải: to right */
+  /* phải qua trái: to left */
+  /* trên xuống dưới: to bottom */
+  /* dưới lên trên: to top */
+  /* trái quá phải rồi đi xuống dưới: to right bottom */
+  /* phải qua trái rồi đi xuống dưới: to left bottom */
+  /* trái quá phải rồi đi xuống lên: to right top */
+  /* phải qua trái rồi đi xuống lên: to left top */
+  background-image: linear-gradient(to right bottom, red 20%, blue);
+}
