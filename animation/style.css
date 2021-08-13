@@ -1,0 +1,97 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cha {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: #000;
+}
+
+.banner {
+  margin: auto auto;
+  max-width: 33.3%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+.banner:hover::before {
+  bottom: 4rem;
+  right: 6rem;
+}
+
+.banner:hover::after {
+  top: 4rem;
+  left: 6rem;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: .3s ease;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAU0lEQVQoU43QMRYAEQwE0ExHyf3vqNxybF6wRIpNZ3whIL74UJDh4zNQpFWTSMOx9y0m0m6FdmDDBnc073QYIQqwweDxa5jR+Zru+gUNCvkPvrgDcCIgJ6cWP4UAAAAASUVORK5CYII=) repeat;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: .3s ease;
+  background: #00fff7;
+  top: 2rem;
+  left: 2rem;
+}
+
+.banner:hover .banner__overlay {
+  opacity: 1;
+  width: 100%;
+}
+
+.banner__overlay {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s linear;
+  justify-content: center;
+}
+
+.banner__overlay p {
+  color: white;
+}
+
+/* 
+trạng thái bắt đầu
+
+width
+height
+vị trí
+
+
+trạng thái kết thúc của hiệu ứng đó
+
+
+width
+height
+vị trí
+*/

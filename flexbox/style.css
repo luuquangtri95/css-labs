@@ -16,7 +16,7 @@ img {
 /* card-list */
 
 .cards {
-  --spacing: 3rem;
+  --spacing: 2rem;
   --columns: 4;
   display: flex;
   flex-wrap: wrap;
